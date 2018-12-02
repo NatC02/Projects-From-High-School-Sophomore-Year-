@@ -1,0 +1,37 @@
+
+public class Variables {
+	
+	public static void main (String [] args) {
+		
+		byte byteTwo = -127;
+		short byteThree = 32000;
+		int byteFour = -63942764;
+		long byteFive = 539678605;
+		float fractionException = 3/2;
+		double decimalException = 34.227;
+		char ASCII = 'M';
+		char characterException = 78;
+		
+		System.out.println("///////////////////////////////");
+		System.out.println("*Natan Ceballos			   8/1/18*");
+		System.out.println("*8 bit - byteTwo = "+byteTwo+" *");
+		System.out.println("*16 bit - byteThree "+byteThree+" *");
+		System.out.println("*32 bit - byteFour "+byteFour+" *");
+		System.out.println("*64 bit - byteFive "+byteFive+" *");
+		System.out.println("*32 bit - fractionException "+fractionException+" *");
+		System.out.println("*64 bit - decimalException "+decimalException+" *");
+		System.out.println('M' + 1);
+		System.out.println("Sorry I turned this in late Mr. Kraus I was pretty busy this week in particular as well as last week! I also did some extra stuff");
+		
+		//Extra Stuff
+		
+		char someMathWithChar = 'C' + 'N';
+		char Sum = 'C' + 'N';
+		System.out.println(Sum);
+		
+		System.out.println(someMathWithChar);
+		
+		System.out.println("I was genuinely curious if it will print out both the same, but it just prints out whats above this text");
+	}
+	
+}

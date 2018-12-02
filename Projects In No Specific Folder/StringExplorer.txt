@@ -1,0 +1,38 @@
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+/**
+ * A program to allow students to try out different 
+ * String methods. 
+ * @author Laurie White
+ * @version April 2012
+ */
+public class StringExplorer
+{
+
+	public static void main(String[] args)
+	{
+		String sample = "          The Quick brown Fox jumped oVer the lazy Dog            .";
+		
+		//  Demonstrate the indexOf method.
+		int position = sample.indexOf("quick");
+		System.out.println ("sample.indexOf(\"quick\") = " + position);
+		
+		int notFoundPsn = sample.indexOf("slow");
+		System.out.println("sample.indexOf(\"slow\")  = "  + notFoundPsn);
+		//  Demonstrate the toLowerCase method.
+		String lowerCase = sample.toLowerCase();
+		System.out.println ("sample.toLowerCase() = " + lowerCase);
+		System.out.println ("After toLowerCase(), sample = " + sample);
+		
+		//  Try other methods here:
+		
+		String upperCase = sample.toUpperCase();
+		System.out.println ("After toLowerCase(), sample = " + upperCase);
+		
+		String trim = sample.trim();
+		System.out.println ("Before Trim(), sample = " + sample);
+		System.out.println ("After Trim(), sample = " + trim);
+
+	}
+
+}

@@ -1,0 +1,20 @@
+public class RectanglesTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Rectangle r1 = new Rectangle(2, 5);
+        System.out.println(r1);
+        Rectangle r2 = new Rectangle(4, 4);
+        System.out.println(r2.getArea());
+        Rectangle r3 = new Rectangle(5, 5);
+        System.out.println(r3.toString());
+        System.out.println(r3.getArea());
+        Rectangle r5 = new Rectangle(7, 7);
+        System.out.println("The area is " +r5.getArea());
+        System.out.println(r5.toString());
+        System.out.println("The Perimeter of rectangle r5 is " + r5.getPerimeter());
+        System.out.println(r5.toStringp());
+	}
+
+}

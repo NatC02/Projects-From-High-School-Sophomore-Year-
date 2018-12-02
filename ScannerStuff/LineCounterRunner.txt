@@ -1,0 +1,28 @@
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+
+import java.util.Scanner;
+import static java.lang.System.*;  
+
+public class LineCounterRunner
+{
+   public static void main( String args[] )
+   {
+	   LineCounter test = new LineCounter(" 4 65 54 1 2 4 543");
+	   System.out.println(test);
+	   System.out.print("count = " + test.getCount() + "\n\n");
+	   
+	   LineCounter test2 = new LineCounter(" 3");
+	   System.out.println(test2);
+	   System.out.print("count = " + test2.getCount() + "\n\n");
+	   
+	   LineCounter test3 = new LineCounter(" 4 543");
+	   System.out.println(test3);
+	   System.out.print("count = " + test3.getCount() + "\n\n");
+	   
+	   LineCounter test4 = new LineCounter(" 234 4 543");
+	   System.out.println(test4);
+	   System.out.print("count = " + test4.getCount() + "\n\n");
+	}
+}

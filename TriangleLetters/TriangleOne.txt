@@ -1,0 +1,51 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class - 
+//Lab  -
+
+import static java.lang.System.*; 
+import java.util.Scanner;
+
+public class TriangleOne
+{
+   private int size;
+   private String letter;
+
+	public TriangleOne()
+	{
+		size=0;
+		letter="";
+	}
+
+	public TriangleOne(int count, String let)
+	{
+		setTriangle(count, let);
+	}
+
+
+	public void setTriangle(int count, String let)
+	{
+		size=count;
+		letter=let;
+	}
+
+	public String getLetter()
+	{
+		return letter;
+	}
+
+	public String toString()
+	{
+		String output="";
+		for(int i=1; i<=size; i++)
+		{
+			for(int j=0; j<i; j++)
+			{
+				output+=getLetter();
+			}
+			output+="\n";
+		}
+		return output;
+	}
+}

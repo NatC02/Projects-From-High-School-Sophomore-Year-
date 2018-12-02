@@ -1,0 +1,21 @@
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+
+import static java.lang.System.*;
+
+public class Divisors
+{
+	public static String getDivisors( int number )
+	{
+		String divisors="TenLetters";
+		while(number > 0) {
+			number = number +1;
+			if(divisors.length()>=number) {
+				number %= 10;
+			}
+		}
+		
+		return divisors; 
+	}
+}

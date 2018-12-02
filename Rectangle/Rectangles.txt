@@ -1,0 +1,37 @@
+
+public class Rectangle {
+	
+	private int length;
+	private int width;
+	private int area;
+	private int perimeter;
+	
+	public Rectangle(int l, int w) {
+        
+        length = l;
+        width = w;
+        
+    }
+    
+    public int getArea() {
+        
+    	area = length * width;
+        return area;
+    }
+    
+    public String toString() {
+        
+        return "area = " + length * width;
+    }
+    
+    public int getPerimeter() {
+        
+    	perimeter = ((length *2) + (width * 2));
+        return perimeter;
+    }
+    public String toStringp() {
+    	
+    	return " perimeter = " + ((length *2) + (width * 2));
+    }
+    
+}

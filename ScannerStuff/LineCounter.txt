@@ -1,0 +1,51 @@
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+
+import java.util.Scanner;
+import static java.lang.System.*;
+
+public class LineCounter
+{
+   private String line;
+
+   public LineCounter()
+   {
+		setLine("");
+   }
+
+   public LineCounter(String s)
+   {
+	   line = s;
+   }
+
+	public void setLine(String s)
+	{
+		line = s;
+	}
+
+	public int getCount()
+	{
+		int count = 0;
+		
+		for(int i = 0; i < line.length(); i++){
+			if(Character.isWhitespace(line.charAt(i))){
+				count = count + 1;
+				line.replaceAll("-", " ");
+			}
+		}
+		return count;
+	}
+
+	public String getLine()
+	{
+		return line;
+	}
+
+	public String toString()
+	{
+		return getLine();
+	}
+}
+
+/* */

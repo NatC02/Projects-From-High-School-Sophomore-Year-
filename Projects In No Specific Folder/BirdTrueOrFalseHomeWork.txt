@@ -1,0 +1,27 @@
+
+public class Bird {
+
+	private int temperature;
+	private boolean isSummer;
+	private boolean isNotSummer;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public Bird (int t, boolean s) {
+		
+		int temperature = t;
+		boolean isSummer = true;
+		boolean isNotSummer = true;
+		
+		if (temperature >= 60 & temperature <= 90) {
+			System.out.println(isNotSummer);
+		}else{
+			if (temperature <= 100) {
+				System.out.println(isSummer);;
+			}
+		}
+	}
+}
