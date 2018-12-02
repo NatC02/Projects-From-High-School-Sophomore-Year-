@@ -1,0 +1,16 @@
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+
+import java.util.Scanner;
+import static java.lang.System.*;
+
+public class AverageRunner
+{
+   public static void main( String args[] )
+   {   
+	   Average test = new Average("3 2 2 2 2 2 2 3");
+	   System.out.println(test);
+	   test.getCount();
+	}
+}

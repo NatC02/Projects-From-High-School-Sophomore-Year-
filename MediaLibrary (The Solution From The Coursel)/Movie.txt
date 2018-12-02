@@ -1,0 +1,46 @@
+
+public class Movie {
+	
+	private double Money;
+	private String Name;
+	private double YourMoney;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	public Movie() {
+		
+		Money = 0;
+		Name = "n";
+		YourMoney = 0;
+	}
+
+	public Movie (double Money, String Name, double YourMoney) {
+		
+		this.Money = Money;
+		this.Name = Name;
+		this.YourMoney = YourMoney;
+	}
+	
+	public double getMoney() { //accessors
+		return Money;
+	}
+	public void setMoney (double m) { //mutator
+			Money = m;
+		}
+		
+	public String getName() {
+			return Name;
+		}
+	public void setName (String n) {
+				Name = n;
+			}
+			
+	public double getYourMoney() {
+				return YourMoney;
+			}
+	public void setYourMoney (double YM) {
+					YourMoney = YM;
+				}
+		
+}

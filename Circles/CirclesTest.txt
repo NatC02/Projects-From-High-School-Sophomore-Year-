@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CirclesTest {
+    
+    public static void main(String[] args) {
+
+        Circle c1 = new Circle(4);
+        System.out.println(c1);
+        Circle c2 = new Circle(3);
+        System.out.println(c2.getArea());
+        Circle c3 = new Circle(5);
+        System.out.println(c3.toString());
+        System.out.println(c3.getArea());
+        Circle c5 = new Circle(10);
+        System.out.println("The area is " +c5.getArea());
+        System.out.println(c5.toString());
+        System.out.println("Hello! The circumference of circle c5 is " + c5.getArea());
+
+    }
+}

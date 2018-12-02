@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class PolygonTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Polygon p1 = new Polygon(3, 5);
+        System.out.println(p1);
+        Polygon p2 = new Polygon(4, 5);
+        System.out.println(p2.getArea());
+        Polygon p3 = new Polygon(5, 5);
+        System.out.println(p3.toString());
+        System.out.println(p3.getArea());
+        Polygon p5 = new Polygon(7, 5);
+        System.out.println("The Perimeter of Polygon p5 is " + p5.getPerimeter());
+        System.out.println(p5.toStringP());
+        System.out.println("The Apothem of Polygon p5 is " + p5.getApothem());
+        System.out.println(p5.toStringApo());
+        System.out.println("The area of Polygon p5 is " + p5.getArea());
+        System.out.println(p5.toString());
+        
+
+	}
+
+}

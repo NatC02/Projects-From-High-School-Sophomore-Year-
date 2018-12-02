@@ -1,0 +1,22 @@
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+//Date -
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListOddToEven
+{
+	public static boolean go( List<Integer> ray )
+	{
+		for (int i = 0; i < ray.size(); i++) {
+			if (ray.get(i) % 2 != 0) {
+				System.out.println(ray.indexOf(ray.get(i) % 2 == 0));
+				if (ray.get(i) % 2 == 0);
+				System.out.println(ray.indexOf(ray.get(i) % 2 != 0) - ray.get(i) % 2 == 0);
+			}
+		}
+		return false;
+	}
+}

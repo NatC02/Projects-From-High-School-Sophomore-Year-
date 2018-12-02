@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Polygon {
+    
+	private double area;
+	private int perimeter;
+    private double apothem;
+    private int sideLength;
+    private int numberOfSides;
+    
+    public Polygon(int s, int n) {
+        
+        sideLength = s;
+        numberOfSides = n;
+        
+    }
+    
+    public double getArea() {
+        
+    	area = (double) (.5 * (sideLength/(2 * Math.tan(Math.PI /numberOfSides))));
+        return area;
+    }
+    
+    public String toString() {
+    	
+    	return " area = " + .5 * (sideLength/(2 * Math.tan(Math.PI /numberOfSides)));
+    }
+    
+    public int getPerimeter() {
+    	
+    	perimeter = sideLength * numberOfSides;
+    	return perimeter ;
+    }
+    
+    public String toStringP() {
+    	
+    	return " perimeter = " + sideLength * numberOfSides;
+    }
+    
+    public double getApothem() {
+        
+    	apothem = (double) (sideLength/(2 * Math.tan(Math.PI /numberOfSides)));
+        return apothem;
+    }          
+    
+    public String toStringApo() {
+		return " Apothem = " + (sideLength/(2 * Math.tan(Math.PI /numberOfSides)));
+    	
+    }
+    
+}

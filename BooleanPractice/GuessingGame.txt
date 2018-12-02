@@ -1,0 +1,45 @@
+//(c) A+ Computer Science
+// www.apluscompsci.com
+//Name -  
+
+import java.util.Scanner;
+import static java.lang.System.*;
+
+public class GuessingGame
+{
+	private int upperBound;
+
+	public GuessingGame(int stop)
+	{
+		
+		stop = (int) (Math.random() * 5);
+		
+		upperBound = stop;
+		stop = upperBound;
+		
+	}
+
+	public void playGame()
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		if(keyboard.nextInt() == upperBound) {
+			System.out.println("You Guessed Right!");
+			}
+		else if (!(keyboard.nextInt() == upperBound)) 
+		{
+				System.out.println("You Guessed Wrong, The Correct Answer Was " + upperBound);
+		{
+		if (upperBound < 1 || upperBound > 5){
+            System.out.println("Invalid input");
+		}
+		}
+			}
+	}
+
+	public String toString()
+	{
+		String output="You Won The Correct Guess Was " + upperBound;
+		return output;
+	}
+}

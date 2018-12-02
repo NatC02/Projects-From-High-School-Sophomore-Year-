@@ -1,0 +1,99 @@
+//(c) A+ Computer Science
+// www.apluscompsci.com
+//Name -  
+
+import java.util.Scanner;
+import java.util.Set;
+
+import static java.lang.System.*;
+
+public class RockPaperScissors
+{
+	private String playChoice;
+	private String compChoice;
+
+	public RockPaperScissors()
+	{
+		compChoice = "";
+		
+	 int choice = (int) (Math.random() * 3);
+	 
+	 switch (choice) {
+	 
+	 case 0 :
+		 compChoice = "R";
+		 break;
+		 
+	 case 1 :
+		 compChoice = "Paper";
+		 break;
+		 
+	 case 2:
+		 compChoice = "Scissors";
+		 break;
+	 }
+		
+		System.out.println("The Computer Choose " + compChoice);
+	}
+
+	public RockPaperScissors(String player)
+	{
+		playChoice = "";
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		player = keyboard.nextLine();
+		
+	}
+
+	public void setPlayers(String player)
+	{
+		if (player.equals("R") && (compChoice.equals(player))) {
+			System.out.println("/nIts a tie! Neither The Player Or The Computer Win!");
+		}else if (!playChoice.equals(compChoice)) {
+			System.out.println();
+		}
+		if (player.equals("Rock") && compChoice.equals("Paper")) {
+			System.out.println("Player Lost! Computer Wins!");
+		}else if (!playChoice.equals("R") && compChoice.equals("P")) {
+			System.out.println();
+		}
+		if (player.equals("R") && compChoice.equals("S")) {
+			System.out.println("Player Wins! Computer Lost!");
+		}else if (!playChoice.equals("P") && compChoice.equals("R")) {
+			System.out.println();
+		}
+		if (player.equals("P") && compChoice.equals("R")) {
+			System.out.println("Player Wins! Computer Lost!");
+		}else if (!playChoice.equals("P") && compChoice.equals("R")) {
+			System.out.println();
+		}
+		if (player.equals("P") && compChoice.equals("S")) {
+			System.out.println("Computer Wins! Player Loses!");
+		}else if (!playChoice.equals("P") && compChoice.equals("S")) {
+			System.out.println();
+		}
+		if (player.equals("S") && compChoice.equals("R")) {
+			System.out.println("Computer Wins! Player Loses!");
+		}else if (!playChoice.equals("S") && compChoice.equals("R")) {
+			System.out.println();
+		}
+		if (player.equals("S") && compChoice.equals("P")) {
+			System.out.println("Player Wins! Computer Lost!");
+		}else if (!playChoice.equals("S") && compChoice.equals("P")) {
+			System.out.println();
+		}
+	}
+
+	public String determineWinner()
+	{
+		String winner="The winner is ";
+		return winner;
+	}
+
+	public String toString()
+	{
+		String output=" Player choose " + playChoice;
+		return output;
+	}
+}

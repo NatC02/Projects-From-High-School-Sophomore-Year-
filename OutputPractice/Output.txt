@@ -1,0 +1,12 @@
+
+public class Output {
+
+	public static void main(String[] args) {
+
+		System.out.println("We the people of the United States, \t\t general Welfare, secure the Blessings of Liberty");
+		System.out.println("In Order to Form a more perfect Union, \t\t to ourselves and our Posterity, do ordain and");
+		System.out.println("establich Justice, insure domestic Tranquility \t establish this Constitution for the");
+		System.out.println("provide for the common defence, promote the \t United States of America");
+	}
+
+}

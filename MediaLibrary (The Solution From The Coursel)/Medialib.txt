@@ -1,0 +1,37 @@
+
+public class Medialib {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			System.out.println("Welcome To Your Media Library");
+			
+			double totalCost = 0.0;
+			int numSongs = 0;
+			int totalRating = 0;
+			
+			Song song1 = new Song(); //here you instantiated a new song and its an object of Song
+			
+			song1 .setTitle("Happy Birthday");
+			System.out.println(song1.getTitle());
+			totalCost += song1.getPrice();
+			totalCost += song1.getPrice();
+			numSongs ++; 
+			
+			song1.setPrice(13.5);
+			System.out.println(song1.getPrice());
+			
+			song1.setRating(8/10);
+			System.out.println(song1.getRating());
+			
+			Song song2 = new Song("Jingle Bells", 1.99);
+			System.out.println(song1.getTitle() + " " + song2.getPrice());
+			
+			Song song3 = new Song("Boi", 0404.44, 2);
+			System.out.println(song3.toString());
+			totalCost += song3.getPrice();
+			numSongs++;
+			
+			System.out.println("Your total cost = " + totalCost + " " + "and your toal rating = " + totalRating);
+	}
+	
+}

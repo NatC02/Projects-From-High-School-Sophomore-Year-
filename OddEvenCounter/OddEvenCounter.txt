@@ -1,0 +1,49 @@
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+
+import java.util.Scanner;
+import static java.lang.System.*;
+
+public class OddEvenCounter
+{
+	private String line;
+
+   public OddEvenCounter()
+   {
+	   line = " ";
+   }
+
+   public OddEvenCounter(String s)
+   {
+	   line = s;
+   }
+
+	public void setLine(String s)
+	{
+		line = s;
+	}
+
+	public int getEvenCount()
+	{
+		int count= 0;
+		Scanner chopper = new Scanner(line);
+		while (count < line.length()) {
+			count = count + 1;
+			for (int i = 0; i < count; i++ );
+			if (count % 2 == 0)
+			}
+		return count;
+	}
+
+	public int getOddCount()
+	{
+		int count= 0;
+		return count;
+	}
+
+	public String toString( )
+	{
+		return "";
+	}
+}

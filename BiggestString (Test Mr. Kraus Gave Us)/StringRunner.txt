@@ -1,0 +1,31 @@
+//(c) A+ Computer Science
+// www.apluscompsci.com
+//Name - 
+
+import static java.lang.System.*;
+import java.util.Scanner;
+
+public class StringRunner
+{
+public static void main(String args[]) {
+BiggestString t1 = new BiggestString();
+t1.setStrings("one", "two", "three");
+t1.getBiggest();
+System.out.print(t1.toString());
+
+BiggestString t2 = new BiggestString();
+t2.setStrings("ok", "alright", "confirmed");
+t2.getBiggest();
+System.out.print(t2.toString());
+
+BiggestString t3 = new BiggestString();
+t3.setStrings("You", "Know", "Better");
+t3.getBiggest();
+System.out.print(t3.toString());
+
+BiggestString t4 = new BiggestString();
+t4.setStrings("Alot", "Many", "Crowded");
+t4.getBiggest();
+System.out.print(t4.toString());
+}
+}

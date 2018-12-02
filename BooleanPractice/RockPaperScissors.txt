@@ -1,0 +1,56 @@
+//(c) A+ Computer Science
+// www.apluscompsci.com
+//Name -  
+
+import java.util.Scanner;
+import java.util.Set;
+
+import static java.lang.System.*;
+
+public class RockPaperScissors
+{
+	private String playChoice;
+	private String compChoice;
+
+	public RockPaperScissors()
+	{
+		
+	 int choice = (int) (Math.random() * 3);
+	 
+	 switch (choice) {
+	 
+	 case 0 :
+		 compChoice = "R";
+		 break;
+		 
+	 case 1 :
+		 compChoice = "P";
+		 break;
+		 
+	 case 2:
+		 compChoice = "S";
+		 break;
+	 }
+			 
+	}
+
+	public RockPaperScissors(String player)
+	{
+	}
+
+	public void setPlayers(String player)
+	{
+	}
+
+	public String determineWinner()
+	{
+		String winner="";
+		return winner;
+	}
+
+	public String toString()
+	{
+		String output="";
+		return output;
+	}
+}

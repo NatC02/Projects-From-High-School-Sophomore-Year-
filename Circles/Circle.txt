@@ -1,0 +1,30 @@
+public class Circle {
+    
+    private int radius;
+    private double area;
+    private double circumference;
+    
+    
+    public Circle(int r) {
+        radius = r;
+    }
+    
+    public int getRadius() {
+        
+        return radius;
+    }
+    
+    public double getArea() {
+        
+        return Math.PI * (radius * radius);
+    }
+    
+    public String toString() {
+        
+        return "radius = " + radius;
+    }
+    
+    public double getCircumference() {
+        return 2 * Math.PI * radius;
+    }
+}

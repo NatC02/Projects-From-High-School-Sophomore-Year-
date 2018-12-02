@@ -1,0 +1,61 @@
+
+public class Song 
+{
+	//instance variables
+	private int rating;
+	private String title;
+	private double price;
+	private boolean favorite;
+	
+//Constructor for objects of class Song
+	
+	public Song() {
+		
+		//initiate instance variables
+		rating = 0;
+		title = "";
+		price = 0;
+		
+	}
+	
+	public Song(String title, double price) {
+		
+		this.title = title;
+		this.price = price;
+	}
+	
+	public Song(String title, double price, int rating) { //this is overloading the constructor
+		
+		this.title = title;
+		this.price = price;
+		this.rating = rating;
+	}
+	
+	public String toString() {
+		return " The title of your song is : " + getTitle() + "," + 
+			" The price of your song is: $" + getPrice() + "," +
+				" and the rating is: " + getRating();
+	}
+
+	public int getRating() { //accessors
+		return rating;
+	}
+		public void setRating (int r) { //mutator
+			rating = r;
+		}
+		
+		public String getTitle() {
+			return title;
+		}
+			public void setTitle (String t) {
+				title = t;
+			}
+			
+			public double getPrice() {
+				return price;
+			}
+				public void setPrice (double p) {
+					price = p;
+				}
+			
+}
