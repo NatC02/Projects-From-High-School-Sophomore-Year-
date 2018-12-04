@@ -1,0 +1,33 @@
+//(c) A+ Computer Science
+// www.apluscompsci.com
+
+//for loop used to total up values
+
+import static java.lang.System.*;
+
+public class ForFun
+{
+	public static void main(String args[])
+	{
+		//how to make a for loop 
+		//look like a while loop
+		int run = 1;
+		int total = 0;
+		for(  ; run<=5;  )  
+		{
+			total=total+run;
+			run = run + 1;
+		}
+		System.out.println(total);
+		
+		//while loop version
+		int fun = 1;
+		total = 0;
+		while( fun <=5 )
+		{
+			total = total + fun;
+			fun = fun + 1;
+		}
+		System.out.println(total);		
+	}
+}

@@ -1,0 +1,18 @@
+//(c) A+ Computer Science
+// www.apluscompsci.com
+
+//for loop example 2
+
+import static java.lang.System.*;
+
+public class ForTwo
+{
+	public static void main(String args[])
+	{
+		for(int aplus=1; aplus<7; aplus+=2)  //change the stop and increment
+		{
+		   out.println("aplus");
+		   out.println( aplus );
+		}
+	}
+}
